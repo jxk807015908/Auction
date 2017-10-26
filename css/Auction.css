@@ -1,0 +1,205 @@
+body,div,ul,li,p,figure,img,h1{margin:0;padding:0;}
+img{border: none;}
+li{list-style: none;}
+.spirit{background: url("../images/social-sprit.png") no-repeat;}
+.readmore{position:relative;transition:.5s;display: block;width: 111px;height: 35px;background: #262e39;line-height: 35px;text-align: center;color: white;text-decoration: none;border-radius: 4px;font-size: 11px;}
+.readmore:hover{background: #ffffff;color: #000000;}
+.readmore .left{width: 0;background: #ffffff;transition: 0.5s;height: 100%;position: absolute;right: 50%;top:0;border-top-left-radius: 4px;border-bottom-left-radius: 4px;z-index: 1;}
+.readmore:hover .left{width: 50%;}
+.readmore .right{width: 0;background: #ffffff;transition: 0.5s;height: 100%;position: absolute;left: 50%;top:0;border-top-right-radius: 4px;border-bottom-right-radius: 4px;z-index: 1;}
+.readmore:hover .right{width: 50%;}
+.readmore p{width:100%;position: absolute;z-index: 2;}
+
+.auction{width:100%;margin: 0 auto;overflow: hidden}
+.auction header{background: #262f38;position: relative;border-bottom: 3px solid #0db1cd;height: 83px;}
+.auction header .nav1{position: absolute;right: 196px;top:0;}
+.auction header .nav1 ul{}
+.auction header .nav1 ul li:last-child{display: none;}
+.auction header .nav1 ul li{float: left;padding-left: 15px;padding-right: 15px;line-height: 83px;transition: 2s;}
+.auction header .nav1 ul li:hover{background: #0ab3d4;}
+.auction header .nav1 ul li a{color: white;text-decoration: none}
+.auction header .nav2{position: absolute;right: 23px;top:26px;}
+.auction header .nav2 ul{}
+.auction header .nav2 ul li{float: left}
+.auction header .nav2 ul li:nth-child(1){margin-right: 14px;margin-top: 6px;}
+.auction header .nav2 ul li:nth-child(2){margin-right: 14px;margin-top: 6px;}
+.auction header .nav2 ul li:nth-child(3){margin-right: 30px;margin-top: 6px;}
+.auction header .nav2 ul li a div{transition: 0.5s;}
+.auction header .nav2 ul li a .nav_icon1{width: 10px;height: 20px; }
+.auction header .nav2 ul li a .nav_icon2{width: 20px;height: 19px;background-position: -17px 0;}
+.auction header .nav2 ul li a .nav_icon3{width: 20px;height: 20px;background-position: -39px 0;}
+.auction header .nav2 ul li a:hover .nav_icon1{background-position: 0 -25px; }
+.auction header .nav2 ul li a:hover .nav_icon2{background-position: -17px -26px;}
+.auction header .nav2 ul li a:hover .nav_icon3{background-position: -39px -25px;}
+.auction header a .fold_menu_button{position: absolute;right: 196px;top:25px;display: none;}
+.auction header #fold_menu{position: absolute;width: 100%;background: #000000;top:83px;transition: 1s;height: 0;overflow: hidden;z-index: 3;}
+.auction header #fold_menu:target{height: 240px;}
+.auction header #fold_menu li{text-align: center;}
+.auction header #fold_menu li a{line-height: 60px;display: block;width: 100%;text-decoration: none;color: white;}
+.auction header #fold_menu li a:hover{color: #000000;background: #0db1cd;}
+.auction header #fold_menu li:nth-child(1) a{color: #000000;background: #0db1cd;}
+
+.auction .showpic{overflow: hidden;position: relative;}
+.auction .showpic img{width: 100%;float: left}
+.auction .showpic ul{}
+.auction .showpic ul li{position: absolute;top:35%;width: 100%;text-align: center;display: none;}
+.auction .showpic ul li:first-child{display: block;}
+.auction .showpic ul li h1{color: white;font-size: 60px;font-weight: normal;}
+.auction .showpic ul li em{color: #0db1cd;display: block;font-size: 30px;padding-top: 20px;font-family: "Monotype Corsiva"}
+.auction .showpic ul li .readmore{display: inline-block;background: #0db1cd;margin-top: 20px;}
+.auction .showpic .next{position: absolute;top: 50%;right: 5%;width: 4%;opacity: 0.5;margin-top: -24px;}
+.auction .showpic .prev{position: absolute;top: 50%;left: 5%;width: 4%;opacity: 0.5;margin-top: -24px;}
+
+.auction .content{width: 100%;line-height: 75px;background: #0ab3d4;color: white;font-size: 16px;height: 75px;overflow: hidden;}
+.auction .content span{padding-left: 20px;float: left}
+.auction .content a{float: right;margin-top: 20px;margin-right: 19px;}
+
+.auction section{}
+.auction section .service{}
+.auction section article header{border: none;background: none;text-align: center;height: auto;}
+.auction section article header h1{padding-top: 30px;}
+.auction section article header p{font-size: 14px;color: #a6a5a0;padding-top: 6px;margin-bottom: 34px;}
+.auction section .pic_list figure{}
+.auction section .pic_list figure ul{padding-left: 8%;overflow: hidden}
+.auction section .pic_list figure ul li{padding-right:4%;float: left;padding-bottom: 22px;width:28%;position: relative;border-bottom:1px solid #e5e5e5;margin-bottom: 27px;}
+.auction section .pic_list figure ul li img{width: 100%}
+.auction section .pic_list figure ul li p{font-weight: bold;font-size: 14px;color: #000000;}
+.auction section .pic_list figure ul li span{font-size: 12px;color: #959394;}
+
+.auction section .service figure ul li:nth-child(3n){padding-right:0;}
+.auction section .feature{width: 100%;overflow: hidden;height: auto;position: relative;padding-bottom: 41px;border-bottom: 1px solid #e5e5e5; }
+.auction section .feature header{}
+.auction section .feature header h1{padding-top: 6px;}
+.auction section .feature figure{float: left;width: 35%;margin-left: 2.5%;margin-right: 2.5%;position: relative}
+.auction section .feature figure img{width: 100%}
+.auction section .feature aside{}
+.auction section .feature aside h1{color: #000000;padding-bottom: 10px;padding-top: 22px;}
+.auction section .feature aside p{font-size: 12px;color: #959394;width: 90%;line-height: 21px;}
+.auction section .feature aside a{display: block;margin-top: 10px;color: #32bdd2}
+.auction section .feature:nth-child(3) header h1{padding-top: 32px;}
+.auction section .feature:nth-child(3) figure{float: right}
+.auction section .feature:nth-child(3) aside{padding-left: 19px;}
+
+.auction section .project figure ul li{width:20%;position: relative;text-align: center}
+.auction section .project figure ul li a{width: 100%;position: relative;display: block;overflow: hidden;}
+.auction section .project figure ul li a .shelter{width: 100%;height: 97.5%;position: absolute;top: 0;left: 0;background: #000000;opacity: 0.5;display: none;}
+.auction section .project figure ul li a .plus{width: auto;position: absolute;top:-30px;left: -30px;transition: 0.5s;}
+.auction section .project figure ul li a:hover .shelter{display: block;}
+.auction section .project figure ul li a:hover .plus{top:50%;left: 50%;margin-left: -15px;margin-top: -15px;}
+
+.auction section .client header h1{padding-top: 6px;}
+.auction section .client header h1 span{font-weight: normal;color: #464147;}
+.auction section .client .text_play{position: relative}
+.auction section .client .text_play .point_list{position: absolute;bottom: -15px;left: 50%;margin-left: -55px;}
+.auction section .client .text_play .point_list li{float: left;margin-right: 11px;}
+.auction section .client .text_play .point_list li a{display: block;width: 11px;height: 11px;border-radius: 11px;background: #989898;}
+.auction section .client .text_play .point_list li a:hover{background: #00afc8;}
+.auction section .client .text_play .point_list .active a{background: #00afc8;}
+.auction section .client .text_play .text_list1{color: #ffffff;}
+.auction section .client .text_play .text_list1 li{text-align: center}
+.auction section .client .text_play .text_list1 li p{font-size: 12px;line-height: 20px;color: #ffffff}
+.auction section .client .text_play .text_list1 li .line{width: 320px;display:inline-block;background: #ffffff;height: 1px;}
+.auction section .client .text_play .text_list1 li h1{padding-top: 5px;}
+.auction section .client .text_play .text_frame{width: 100%;overflow: hidden;height: auto;clear: both}
+.auction section .client .text_play .text_list{position: absolute;left: 0;top: 0;width: 500%;transition: 1s;overflow: hidden}
+.auction section .client .text_play .text_list li{text-align: center;float: left;width: 20%;overflow: hidden;}
+.auction section .client .text_play .text_list li p{font-size: 12px;line-height: 20px;color: #a7a6a4}
+.auction section .client .text_play .text_list li .line{width: 320px;display:inline-block;background: #adadad;height: 1px;}
+.auction section .client .text_play .text_list li h1{padding-top: 5px;}
+
+.auction section footer{margin-top: 32px;background: #0ab3d4;padding-left: 19px;position: relative;padding-bottom: 27px;}
+.auction section footer h1{padding-top: 29px;color: white;}
+.auction section footer .Duis{color: #ddfbf3}
+.auction section footer .readmore{position: absolute;right: 20px;top:36px;}
+
+.auction .auction_footer{background: #262f38;overflow: hidden;color: #dbe6de;padding-bottom: 25px;}
+.auction .auction_footer ul{}
+.auction .auction_footer ul li{float: left;width: 23%;padding-left: 2%;padding-top: 30px;position: relative}
+.auction .auction_footer ul li h1{font-size: 20px;padding-bottom: 24px;}
+.auction .auction_footer ul li p{font-size: 12px;line-height: 20px;}
+.auction .auction_footer ul li p:nth-child(2){width: 90%;text-align: justify;}
+.auction .auction_footer ul li .posts{}
+.auction .auction_footer ul li .posts a{color: #dbe6de;display: block;overflow: hidden;border-bottom: 1px solid #313b44;padding-top: 6px;}
+.auction .auction_footer ul li .posts a:nth-child(1){padding-top: 0;}
+.auction .auction_footer ul li .posts a figure{float: left;padding-right: 21px;padding-bottom: 11px;}
+.auction .auction_footer ul li .posts a figure img{}
+.auction .auction_footer ul li .posts a aside{float: left}
+.auction .auction_footer ul li .posts a aside p{width: 90%;line-height: 15px;}
+.auction .auction_footer ul li .posts a aside span{font-size: 12px;color: #d4edf2;padding-top: 5px;}
+.auction .auction_footer ul li .Categories{color: #dbe6de;font-size: 12px;display: block;text-decoration: none;padding-bottom: 10px;border-bottom: 1px solid #313b44;padding-top: 15px;}
+.auction .auction_footer ul li .Categories:nth-child(2){padding-top: 0;}
+.auction .auction_footer ul li .project2{width: 214px;}
+.auction .auction_footer ul li .project2 img{}
+
+@media(max-width: 651px) {
+    .auction header a .fold_menu_button{display: block;}
+    .auction header .nav1{position:fixed;right: 0px;top:86px;background: #000000;opacity: 0.5;display: none;}
+    .auction header .nav1 ul{}
+    .auction header .nav1 ul li:last-child{display: block;}
+    .auction header .nav1 ul li{line-height: 50px;padding:0;width: 60px;text-align: center;float: none;}
+    .auction header .nav1 ul li:hover{}
+    .auction header .nav1 ul li a{color: white;text-decoration: none;font-size: 12px;text-align: center}
+
+}
+@media(max-width: 380px){
+    .auction header .nav2{display: none}
+    .auction header a .fold_menu_button{right: 23px;}
+}
+
+@media(max-width: 832px) and (min-width: 562px){
+    .auction section .service figure ul{}
+    .auction section .service figure ul li{width: 44%;padding-right: 4%;}
+    .auction section .service figure ul li:nth-child(3n){padding-right:4%;}
+}
+@media(max-width: 562px){
+    .auction section .service figure ul{}
+    .auction section .service figure ul li{width: 80%;padding-right: 5%;padding-left: 5%;}
+}
+
+@media(max-width: 957px){
+    .auction section .feature{text-align: center}
+    .auction section .feature figure{float: none;display: inline-block}
+    .auction section .feature:nth-child(3) figure{float: none}
+}
+
+@media (max-width: 748px) {
+    .auction section .project figure ul{}
+    .auction section .project figure ul li{width: 44%;padding-right: 4%;}
+    .auction section .project figure ul li:nth-child(3n){padding-right:4%;}
+}
+
+@media(max-width: 1061px) and (min-width: 572px){
+    .auction .auction_footer ul li{width: 45%;padding-left: 5%;}
+}
+@media(max-width: 572px){
+    .auction .auction_footer ul li{width: 90%;padding-left: 10%;}
+}
+
+@media (max-width: 996px) and (min-width: 842px){
+    .auction .showpic ul li h1{font-size: 50px;}
+    .auction .showpic ul li em{font-size: 25px;}
+}
+@media (max-width: 842px) and (min-width: 648px){
+    .auction .showpic ul li h1{font-size: 40px;}
+    .auction .showpic ul li em{font-size: 20px;}
+}
+@media (max-width: 648px) and (min-width: 482px){
+    .auction .showpic ul li h1{font-size:30px;}
+    .auction .showpic ul li em{font-size:15px;}
+}
+@media (max-width: 482px) and (min-width: 342px){
+    .auction .showpic ul li h1{font-size:20px;}
+    .auction .showpic ul li em{font-size:10px;}
+}
+@media (max-width: 342px) {
+    .auction .showpic ul li h1{font-size: 10px;}
+    .auction .showpic ul li em{font-size: 5px;}
+}
+
+
+
+
+
+
+
+
